@@ -1,0 +1,12 @@
+FROM hashicorp/terraform:0.12.29
+
+ENV HTTP_PROXY=$HTTP_PROXY
+ENV HTTPS_PROXY=$HTTPS_PROXY
+
+ADD entrypoint.sh /entrypoint.sh
+ADD RunTerraformScript.ps1 /RunTerraformScript.ps1
+
+RUN chmod +x /entrypoint.sh
+RUN chmod +x /RunTerraformScript.ps1
+
+ENTRYPOINT ["/entrypoint.sh"]
