@@ -2,4 +2,4 @@
 
 echo "hello from terraform action"
 
-pwsh /RunTerraformScript.ps1
+$ ./RunTerraformScript.ps1
