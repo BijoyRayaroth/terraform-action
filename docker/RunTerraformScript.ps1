@@ -1,3 +1,3 @@
-#!/usr/bin/env pwsh
+#! /usr/bin/pwsh
 
 echo "Inside powershell"
