@@ -2,7 +2,8 @@
 
 echo "hello from terraform action"
 
-Version = terraform -version
-echo "Terraform version-${Version}"
+terraform init
+echo "Terraform init"
+terraform validate
 
 
