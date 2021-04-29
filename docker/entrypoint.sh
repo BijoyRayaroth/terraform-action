@@ -2,11 +2,8 @@
 
 echo "hello from terraform action"
 
-yourfilenames=`ls .`
-for eachfile in $yourfilenames
-do
-   echo $eachfile
-done
+cp /main.tf .
+cp /Variables.tf .
 
 terraform init
 echo "Terraform init"
