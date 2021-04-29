@@ -2,4 +2,7 @@
 
 echo "hello from terraform action"
 
-pwsh ./RunTerraformScript.ps1
+Version = terraform -version
+echo "Terraform version-${Version}"
+
+
