@@ -1,1 +1,1 @@
-TODO-- Add terraform commands here.
+echo "Inside powershell"
