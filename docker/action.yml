@@ -7,4 +7,4 @@ inputs:
     default: 3
 runs:
   using: docker
-  image: docker\Dockerfile
+  image: Dockerfile
