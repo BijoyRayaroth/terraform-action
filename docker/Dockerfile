@@ -7,6 +7,8 @@ ENV HTTPS_PROXY=$HTTPS_PROXY
 
 ADD entrypoint.sh /entrypoint.sh
 ADD RunTerraformScript.ps1 /RunTerraformScript.ps1
+ADD main.tf /main.tf
+ADD Variables.tf /Variables.tf
 
 RUN chmod +x /entrypoint.sh
 RUN chmod +x /RunTerraformScript.ps1
