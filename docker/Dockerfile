@@ -12,7 +12,7 @@ ADD Variables.tf /tf/Variables.tf
 
 RUN chmod +x /entrypoint.sh
 RUN chmod +x /RunTerraformScript.ps1
-RUN chmod +x /tf/main.tf
-RUN chmod +x /tf/Variables.tf
+RUN chmod +x /main.tf
+RUN chmod +x /Variables.tf
 
 ENTRYPOINT ["/entrypoint.sh"]
