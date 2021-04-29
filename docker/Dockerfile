@@ -11,4 +11,4 @@ ADD RunTerraformScript.ps1 /RunTerraformScript.ps1
 RUN chmod +x /entrypoint.sh
 RUN chmod +x /RunTerraformScript.ps1
 
-ENTRYPOINT ["/RunTerraformScript.ps1"]
+ENTRYPOINT ["/entrypoint.sh"]
