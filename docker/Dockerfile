@@ -1,4 +1,4 @@
-FROM hashicorp/terraform:0.12.29
+FROM hashicorp/terraform:0.14.11
 
 RUN addgroup -S ubuntu && adduser -u 1000 -S ubuntu -G ubuntu
 
