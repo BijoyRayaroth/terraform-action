@@ -9,7 +9,7 @@ inputs:
     description: user name to log-in to provider
     required: false
     default: ${{ secrets.NUTANIX_USERNAME }}
-  passwrod:
+  password:
     description:  password to log-in to provider
     required: false
     default: ${{ secrets.NUTANIX_PASSWORD }}
