@@ -1,8 +1,5 @@
 name: Terraform Action
 description: Create VMs using Terraform
-env:
-  NUTANIX_USERNAME: ${{ secrets.NUTANIX_USERNAME }}
-  NUTANIX_PASSWORD: ${{ secrets.NUTANIX_PASSWORD }}
 inputs:
   vmCounts:
     description: Number of VMs to be created
@@ -11,11 +8,11 @@ inputs:
   userName:
     description: user name to log-in to provider
     required: false
-    default: '${{ env.NUTANIX_USERNAME }}'
+    default: 123
   password:
     description:  password to log-in to provider
     required: false
-    default: '${{ env.NUTANIX_PASSWORD }}'
+    default: 123
 runs:
   using: docker
   image: Dockerfile
