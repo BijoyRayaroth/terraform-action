@@ -7,15 +7,11 @@ inputs:
     default: 3
   userName:
     description: user name to log-in to provider
-    required: false
-    default: 123
+    required: true   
   password:
     description:  password to log-in to provider
-    required: false
-    default: 123
+    required: true    
 runs:
   using: docker
   image: Dockerfile
-  env:
-       NUTANIX_USERNAME: ${{ secrets.NUTANIX_USERNAME }}
-       NUTANIX_PASSWORD: ${{ secrets.NUTANIX_PASSWORD }}
+ 
