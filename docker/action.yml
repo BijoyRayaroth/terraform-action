@@ -8,11 +8,11 @@ inputs:
   userName:
     description: user name to log-in to provider
     required: false
-    default: ${{ secrets.NUTANIX_USERNAME }}
+    default: '${{ secrets.NUTANIX_USERNAME }}'
   password:
     description:  password to log-in to provider
     required: false
-    default: ${{ secrets.NUTANIX_PASSWORD }}
+    default: '${{ secrets.NUTANIX_PASSWORD }}'
 runs:
   using: docker
   image: Dockerfile
