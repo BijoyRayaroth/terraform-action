@@ -5,6 +5,14 @@ inputs:
     description: Number of VMs to be created
     required: false
     default: 3
+  userName:
+    description: user name to log-in to provider
+    required: false
+    default: ${{ secrets.NUTANIX_USERNAME }}
+  passwrod:
+    description:  password to log-in to provider
+    required: false
+    default: ${{ secrets.NUTANIX_PASSWORD }}
 runs:
   using: docker
   image: Dockerfile
