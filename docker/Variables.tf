@@ -35,5 +35,13 @@ variable "nutanix-cluster-uuid" {
   default = "0005a6f4-6172-0a67-0240-ac1f6b3bbebf"
 }
 
+variable "nutanix-userName" {
+  type        = string
+  description = "Nutanix user name"  
+}
 
+variable "nutanix-password" {
+  type        = string
+  description = "Nutanix password" 
+}
 
