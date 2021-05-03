@@ -7,7 +7,7 @@ git config --global user.name "BijoyRayaroth"
 
 git clone https://github.com/BijoyRayaroth/terraform-action.git
 
-cd \terraform-action\docker
+cd /terraform-action/docker
 
 terraform init
 echo "Terraform init"
