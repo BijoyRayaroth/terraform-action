@@ -2,10 +2,10 @@
 
 echo "hello from terraform action"
 
-git config --global user.email "bijoy.rayaroth@gmail.com"
+git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
 
-git clone git@github.com:BijoyRayaroth/terraform-action.git
+git clone https://github.com/BijoyRayaroth/terraform-action.git
 
 cd terraform-action/docker
 
