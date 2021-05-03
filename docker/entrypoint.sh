@@ -5,6 +5,8 @@ echo "hello from terraform action"
 git config --global user.email "action@github.com"
 git config --global user.name "GitHub Action"
 
+git remote add origin https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/${GIT_USERNAME}/terraform-action.git
+
 git clone https://${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
 cd terraform-action/docker
