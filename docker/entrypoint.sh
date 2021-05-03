@@ -17,9 +17,9 @@ cd docker
 
 touch testfile.txt
 
-terraform init
-echo "Terraform init"
-terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
+#terraform init
+#echo "Terraform init"
+#terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
 
 cd ..
 
