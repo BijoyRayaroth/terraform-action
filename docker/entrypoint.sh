@@ -7,7 +7,7 @@ git config --global user.name "BijoyRayaroth"
 
 git remote add origin https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/$GIT_USERNAME/project.git
 
-git clone https://${GIT_USERNAME}:${GIT_PASSWORD}@github.com/$GIT_USERNAME/project.git
+git clone https://${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
 cd terraform-action/docker
 
