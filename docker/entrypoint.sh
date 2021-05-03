@@ -2,12 +2,18 @@
 
 echo "hello from terraform action"
 
-git config --global user.email "action@github.com"
-git config --global user.name "GitHub Action"
+git config --global user.email "bijoy.rayaroth@philips.com"
+git config --global user.name "BijoyRayaroth"
 
-git clone https://${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
+curl -H 'Authorization: token ${GIT_TOKEN}' https://github.com/BijoyRayaroth/terraform-action.git 
 
-cd terraform-action/docker
+git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
+
+cd main
+
+git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
+
+cd docker
 
 terraform init
 echo "Terraform init"
