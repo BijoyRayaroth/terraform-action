@@ -5,9 +5,7 @@ echo "hello from terraform action"
 token="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"
 
 
-git config remote.origin.url 'https://${token}@github.com/BijoyRayaroth/terraform-action.git'
-
-git clone https://github.com/BijoyRayaroth/terraform-action.git
+git clone https://${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
 cd terraform-action/docker
 
