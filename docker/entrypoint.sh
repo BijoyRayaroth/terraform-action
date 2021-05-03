@@ -15,7 +15,7 @@ terraform init
 echo "Terraform init"
 terraform plan -var="nutanix-password=${NUTANIX_PASSWORD}" -var="nutanix-userName=${INPUT_USERNAME}" -out="terraformPlan"
 echo "apply by ${INPUT_USERNAME}"
-terraform apply -var="nutanix-password=${NUTANIX_PASSWORD}" -var="nutanix-userName=${INPUT_USERNAME}"
+terraform apply -var="nutanix-password=${NUTANIX_PASSWORD}" -var="nutanix-userName=${INPUT_USERNAME}" -auto-approve
 
 git add terraformPlan
 git commit -m "adding Plan file"
