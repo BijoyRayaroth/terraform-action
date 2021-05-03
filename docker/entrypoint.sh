@@ -21,6 +21,8 @@ terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=
 
 cd ..
 
+cat .git/config
+
 git status
 git add docker/terraformPlan
 echo "After Add"
