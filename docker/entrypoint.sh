@@ -15,6 +15,8 @@ git remote set-url origin https://BijoyRayaroth:123@github.com/BijoyRayaroth/ter
 
 cd docker
 
+touch testfile.txt
+
 terraform init
 echo "Terraform init"
 terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
@@ -24,7 +26,7 @@ cd ..
 cat .git/config
 
 git status
-git add docker/terraformPlan
+git add docker/testfile.txt
 echo "After Add"
 git status
 git commit -m "adding Plan file"
