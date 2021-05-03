@@ -27,4 +27,4 @@ git commit -m "adding Plan file"
 echo "After Commit"
 git status
 echo "Pushing Terraform Plan file"
-git push https://${GIT_USERNAME}:${GIT_PASSWORD}@terraform-action.biz/file.git --all
+git push https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --all
