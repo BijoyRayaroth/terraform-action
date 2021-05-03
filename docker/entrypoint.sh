@@ -19,7 +19,10 @@ terraform plan -var="nutanix-password=${NUTANIX_PASSWORD}" -var="nutanix-userNam
 
 git status
 git add terraformPlan
+echo "After Add"
+git status
 git commit -m "adding Plan file"
+echo "After Commit"
 git status
 echo "Pushing Terraform Plan file"
-git push origin master
+git push
