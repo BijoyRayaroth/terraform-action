@@ -10,7 +10,7 @@ cd terraform-action/docker
 
 terraform init
 echo "Terraform init"
-terraform plan -var="nutanix-password=${INPUT_USERNAME}" -var="nutanix-userName=${INPUT_PASSWORD}" -out="terraformPlan"
+terraform plan -var="nutanix-password=${INPUT_USERNAME}" -var="nutanix-userName=${NUTANIX_PASSWORD}" -out="terraformPlan"
 
 git add terraformPlan
 git commit -m "adding Plan file"
