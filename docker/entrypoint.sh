@@ -7,7 +7,7 @@ git config --global user.name "BijoyRayaroth"
 
 git clone https://github.com/BijoyRayaroth/terraform-action.git
 
-cd /terraform-action/docker
+cd terraform-action/docker
 
 terraform init
 echo "Terraform init"
@@ -17,3 +17,4 @@ git add terraformPlan
 git commit -m "adding Plan file"
 git push
 
+https://github.com/BijoyRayaroth/terraform-action/blob/main/docker/entrypoint.sh
