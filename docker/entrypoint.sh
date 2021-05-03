@@ -27,12 +27,12 @@ touch testfile.txt
 #echo "Terraform init"
 #terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
 
-cd ..
+
 
 cat .git/config
 
 git status
-git add terraform-action/testfile.txt
+git add .
 echo "After Add"
 git status
 git commit -m "adding Plan file"
