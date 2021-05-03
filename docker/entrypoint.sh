@@ -21,4 +21,4 @@ git commit -m "adding Plan file"
 echo "After Commit"
 git status
 echo "Pushing Terraform Plan file"
-git push origin HEAD:master
+git push origin HEAD:main
