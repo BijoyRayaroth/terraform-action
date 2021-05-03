@@ -7,11 +7,11 @@ git config --global user.name "BijoyRayaroth"
 
 curl -H 'Authorization: token ${GIT_TOKEN}' https://github.com/BijoyRayaroth/terraform-action.git 
 
-git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
+git clone https://BijoyRayaroth:123@github.com/BijoyRayaroth/terraform-action.git --branch=main main
 
 cd main
 
-git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
+git remote set-url origin https://BijoyRayaroth:123@github.com/BijoyRayaroth/terraform-action.git
 
 cd docker
 
