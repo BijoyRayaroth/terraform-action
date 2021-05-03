@@ -7,18 +7,14 @@ git config --global user.name "BijoyRayaroth"
 
 git clone https://${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
-
-git remote set-url upstream https://${GIT_TOKEN}:x-oauth-basic@github.com/BijoyRayaroth/terraform-action.git
-git remote set-url origin https://${GIT_TOKEN}:x-oauth-basic@github.com/BijoyRayaroth/terraform-action.git
-
 cd terraform-action/docker
 
 terraform init
 echo "Terraform init"
-terraform plan -var="nutanix-password=${NUTANIX_PASSWORD}" -var="nutanix-userName=${INPUT_USERNAME}" -out="terraformPlan"
+terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${NUTANIX_PASSWORD}" -out="terraformPlan"
 
 git status
-git add .
+git add terraformPlan
 echo "After Add"
 git status
 git commit -m "adding Plan file"
