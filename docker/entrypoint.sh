@@ -7,6 +7,10 @@ git config --global user.name "BijoyRayaroth"
 
 git clone https://${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
+
+git remote set-url upstream https://${GIT_TOKEN}:x-oauth-basic@github.com/BijoyRayaroth/terraform-action.git
+git remote set-url origin https://${GIT_TOKEN}:x-oauth-basic@github.com/BijoyRayaroth/terraform-action.git
+
 cd terraform-action/docker
 
 terraform init
