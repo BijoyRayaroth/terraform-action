@@ -2,6 +2,10 @@
 
 echo "hello from terraform action"
 
+echo "Installing curl"
+sudo apt update
+sudo apt install curl
+
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
 
