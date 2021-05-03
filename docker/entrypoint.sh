@@ -8,18 +8,17 @@ git version
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
 
-#curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
+curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
 
-#git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
-git clone https://github.com/BijoyRayaroth/terraform-action.git
+git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
 
 cd terraform-action
 
-#cd main
+cd main
 
-#git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
+git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
-#cd docker
+cd docker
 
 touch testfile.txt
 
