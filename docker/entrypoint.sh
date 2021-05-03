@@ -9,7 +9,7 @@ curl -H 'Authorization: token ${GIT_TOKEN}' https://github.com/BijoyRayaroth/ter
 
 git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
 
-cd maini
+cd main
 
 git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
