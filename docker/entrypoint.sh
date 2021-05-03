@@ -19,12 +19,14 @@ terraform init
 echo "Terraform init"
 terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${NUTANIX_PASSWORD}" -out="terraformPlan"
 
+cd ..
+
 git status
-git add terraformPlan
+git add docker/terraformPlan
 echo "After Add"
 git status
 git commit -m "adding Plan file"
 echo "After Commit"
 git status
 echo "Pushing Terraform Plan file"
-git push https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --all
+git push origin main
