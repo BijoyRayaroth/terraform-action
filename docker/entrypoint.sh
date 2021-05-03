@@ -2,8 +2,7 @@
 
 echo "hello from terraform action"
 
-token="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"
-
+git config remote.origin.url 'https://${GIT_TOKEN}@github.com/{BijoyRayaroth}/{terraform-action}.git'
 
 git clone https://${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
 
