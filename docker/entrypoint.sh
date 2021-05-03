@@ -15,6 +15,7 @@ terraform plan -var="nutanix-password=${INPUT_USERNAME}" -var="nutanix-userName=
 
 git add terraformPlan
 git commit -m "adding Plan file"
+echo "Pushing Terraform Plan file"
 git push
 
-https://github.com/BijoyRayaroth/terraform-action/blob/main/docker/entrypoint.sh
+
