@@ -15,7 +15,7 @@ provider "nutanix" {
 
 
 resource "nutanix_virtual_machine" "vm1" {
-  count = 3
+  count = var.vm-count
   name = "${var.vm-name-prefix}-${count.index}"
   cluster_uuid = var.nutanix-cluster-uuid
   num_vcpus_per_socket = 1
