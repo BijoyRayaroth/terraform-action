@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 echo "hello from terraform action"
-MYTOKEN="PhilipsCX20213"
+MYTOKEN="PhilipsCX@2021.3"
 echo "$MYTOKEN"
 
 
