@@ -11,7 +11,8 @@ terraform init
 echo "Terraform init"
 terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
 
-mv terraformPlan ./activites/terraformPlan
+mkdir activites
+mv terraformPlan activites/terraformPlan
 
 
 git status
