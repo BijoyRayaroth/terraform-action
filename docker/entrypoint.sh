@@ -8,6 +8,10 @@ git version
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
 
+git config --global credential.helper store
+
+echo “https://${GIT_USERNAME}:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
+
 curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
 
 git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
@@ -21,9 +25,6 @@ git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRay
 
 cd docker
 
-chmod +x ./RunTerraformScript.ps1
-
-./RunTerraformScript.ps1
 
 touch testfile.txt
 
