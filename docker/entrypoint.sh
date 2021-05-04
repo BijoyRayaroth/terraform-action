@@ -6,11 +6,11 @@ echo "hello from terraform action"
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
 
-git config --global credential.helper store
+#git config --global credential.helper store
 
-echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
+#echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
 
-cat ~/.git-credentials
+#cat ~/.git-credentials
 
 curl --header "Authorization: token ${INPUT_PAT}" https://github.com/BijoyRayaroth/terraform-action.git 
 
