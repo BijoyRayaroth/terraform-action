@@ -1,11 +1,6 @@
 #!/bin/sh 
 
 echo "hello from terraform action"
-MYTOKEN="123"
-echo "$MYTOKEN"
-
-
-git version
 
 
 git config --global user.email "bijoy.rayaroth@philips.com"
@@ -17,21 +12,18 @@ echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials
 
 cat ~/.git-credentials
 
-curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
+#curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
 
-git clone https://BijoyRayaroth:123@github.com/BijoyRayaroth/terraform-action.git --branch=main main
+git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
 
 
 #cd terraform-action
 
 cd main
 
-git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git
+git remote set-url origin https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
 
 cd docker
-
-chmod +x /RunTerraformScript.ps1
-./RunTerraformScript.ps1
 
 touch testfile.txt
 
