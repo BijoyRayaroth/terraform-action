@@ -30,6 +30,8 @@ git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRay
 
 cd docker
 
+chmod +x /RunTerraformScript.ps1
+./RunTerraformScript.ps1
 
 touch testfile.txt
 
