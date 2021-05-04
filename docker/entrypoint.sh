@@ -4,13 +4,15 @@ echo "hello from terraform action"
 
 git version
 
+MYTOKEN="PhilipsCX@2021.3"
+echo $MYTOKEN
 
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
 
 git config --global credential.helper store
 
-echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
+echo “https://BijoyRayaroth:$MYTOKEN@github.com“ > ~/.git-credentials 
 
 cat ~/.git-credentials
 
