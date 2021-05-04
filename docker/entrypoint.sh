@@ -7,21 +7,24 @@ git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-
 
 cd terraform-action/docker
 
+DepID=`tr -dc a-z </dev/urandom | head -c 6`
+mkdir Deployments/$DepID
+
 terraform init
 echo "Terraform init"
-DepID=`tr -dc a-z </dev/urandom | head -c 6`
 terraform apply -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -var="vm-count=1" -var="vm-name-prefix=Sr4-$DepID" 
 
-mkdir activites
-mv terraformPlan activites/terraformPlan
+mv terraform.tfstate Deployments/$DepID
+mv .terraform.lock.hcl
 
+cd Deployments/$DepID
 
 git status
-git add activites/terraformPlan
+git add .
 echo "After Add"
 git status
-git commit -m "adding Plan file"
+git commit -m "adding state file"
 echo "After Commit"
 git status
-echo "Pushing Terraform Plan file"
+echo "Pushing  state file"
 git push origin main
