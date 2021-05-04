@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 echo "hello from terraform action"
-MYTOKEN="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"
+MYTOKEN="123"
 echo "$MYTOKEN"
 
 
@@ -13,7 +13,7 @@ git config --global user.name "BijoyRayaroth"
 
 git config --global credential.helper store
 
-echo “https://BijoyRayaroth:$MYTOKEN@github.com“ > ~/.git-credentials 
+echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
 
 cat ~/.git-credentials
 
