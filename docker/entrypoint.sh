@@ -7,15 +7,13 @@ git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-
 
 cd terraform-action/docker
 
-touch testfile.txt
-
-#terraform init
-#echo "Terraform init"
-#terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
+terraform init
+echo "Terraform init"
+terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
 
 
 git status
-git add .
+git add terraformPlan
 echo "After Add"
 git status
 git commit -m "adding Plan file"
