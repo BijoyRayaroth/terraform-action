@@ -14,16 +14,16 @@ git config --global user.name "BijoyRayaroth"
 
 #curl --header "Authorization: token ${INPUT_PAT}" https://github.com/BijoyRayaroth/terraform-action.git 
 
-git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
+git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
 
 
-#cd terraform-action
+#cd terraform-action/docker
 
-cd main
+#cd main
 
 #git remote set-url origin https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
 
-cd docker
+#cd docker
 
 touch testfile.txt
 
