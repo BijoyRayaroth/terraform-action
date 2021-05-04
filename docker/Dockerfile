@@ -1,6 +1,11 @@
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+FROM hashicorp/terraform:latest
+
+RUN addgroup -S ubuntu && adduser -u 1000 -S ubuntu -G ubuntu
 
 
+RUN apk add --update \
+    curl \
+    && rm -rf /var/cache/apk/*
 
 ENV HTTP_PROXY=$HTTP_PROXY
 ENV HTTPS_PROXY=$HTTPS_PROXY
