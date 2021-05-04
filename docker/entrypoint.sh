@@ -12,6 +12,8 @@ git config --global credential.helper store
 
 echo “https://${GIT_USERNAME}:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
 
+cat ~/.git-credentials
+
 curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
 
 git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
@@ -34,7 +36,7 @@ touch testfile.txt
 
 
 
-cat .git/config
+#cat .git/config
 
 git status
 git add .
