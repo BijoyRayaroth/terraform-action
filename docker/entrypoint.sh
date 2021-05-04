@@ -9,7 +9,8 @@ cd terraform-action/docker
 
 terraform init
 echo "Terraform init"
-terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
+DepID=`tr -dc a-z </dev/urandom | head -c 6`
+terraform apply -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -var="vm-count=1" -var="vm-name-prefix=Sr4-$DepID" 
 
 mkdir activites
 mv terraformPlan activites/terraformPlan
