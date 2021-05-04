@@ -10,7 +10,7 @@ git config --global user.name "BijoyRayaroth"
 
 git config --global credential.helper store
 
-echo “https://${GIT_USERNAME}:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
+echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
 
 cat ~/.git-credentials
 
