@@ -1,6 +1,5 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 
-RUN addgroup -S ubuntu && adduser -u 1000 -S ubuntu -G ubuntu
 
 
 RUN apk add --update \
