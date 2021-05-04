@@ -21,7 +21,7 @@ git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-
 
 cd main
 
-git remote set-url origin https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
+#git remote set-url origin https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
 
 cd docker
 
