@@ -18,10 +18,10 @@ touch terraform.tfstate
 touch .terraform.lock.hcl
 
 
-mv terraform.tfstate Deployments/$DepID
-mv .terraform.lock.hcl Deployments/$DepID
+mv terraform.tfstate ../../Deployments/$DepID
+mv .terraform.lock.hcl ../../Deployments/$DepID
 
-cd Deployments/$DepID
+cd ../../Deployments/$DepID
 
 git status
 git add .
