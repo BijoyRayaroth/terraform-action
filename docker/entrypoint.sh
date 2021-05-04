@@ -1,11 +1,12 @@
-#!/bin/sh -l
+#!/bin/sh 
 
 echo "hello from terraform action"
+MYTOKEN="PhilipsCX20213"
+echo "$MYTOKEN"
+
 
 git version
 
-MYTOKEN="PhilipsCX@2021.3"
-echo "$MYTOKEN"
 
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
