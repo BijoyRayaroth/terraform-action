@@ -2,6 +2,8 @@ FROM hashicorp/terraform:0.14.11
 
 RUN addgroup -S ubuntu && adduser -u 1000 -S ubuntu -G ubuntu
 
+RUN -it mcr.microsoft.com/powershell
+
 RUN apk add --update \
     curl \
     && rm -rf /var/cache/apk/*
