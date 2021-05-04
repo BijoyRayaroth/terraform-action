@@ -5,10 +5,11 @@ git config --global user.name "BijoyRayaroth"
 
 git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
 
+DepID=`tr -dc a-z </dev/urandom | head -c 6`
+mkdir ../Deployments/$DepID
+
 cd terraform-action/create-vm/docker
 
-DepID=`tr -dc a-z </dev/urandom | head -c 6`
-mkdir Deployments/$DepID
 
 terraform init
 echo "Terraform init"
