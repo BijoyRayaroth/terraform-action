@@ -4,6 +4,16 @@ variable "nutanix-endpoint" {
   default = "161.84.188.20"
 }
 
+variable "vm-count" {
+  type        = string
+  description = "Number of VMs needed"
+  default = 3
+}
+
+variable "vm-name-prefix" {
+  type        = string
+  description = "Name prefix to VMs" 
+}
 
 variable "nutanix-insecure" {
   type        = string
