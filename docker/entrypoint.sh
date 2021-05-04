@@ -20,6 +20,8 @@ git remote set-url origin https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRay
 
 cd docker
 
+RunTerraformScript.ps1
+
 touch testfile.txt
 
 #terraform init
