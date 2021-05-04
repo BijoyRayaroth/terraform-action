@@ -19,7 +19,7 @@ cat ~/.git-credentials
 
 curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
 
-git clone https://BijoyRayaroth:${GIT_TOKEN}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
+git clone https://BijoyRayaroth:123@github.com/BijoyRayaroth/terraform-action.git --branch=main main
 
 
 #cd terraform-action
