@@ -1,28 +1,11 @@
 #!/bin/sh 
 
-echo "hello from terraform action"
-
-
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
-
-#git config --global credential.helper store
-
-#echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials 
-
-#cat ~/.git-credentials
-
-#curl --header "Authorization: token ${INPUT_PAT}" https://github.com/BijoyRayaroth/terraform-action.git 
 
 git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
 
 cd terraform-action/docker
-
-#cd main
-
-#git remote set-url origin https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git
-
-#cd docker
 
 touch testfile.txt
 
@@ -30,9 +13,6 @@ touch testfile.txt
 #echo "Terraform init"
 #terraform plan -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -out="terraformPlan"
 
-
-
-#cat .git/config
 
 git status
 git add .
