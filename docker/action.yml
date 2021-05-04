@@ -10,7 +10,10 @@ inputs:
     required: true   
   password:
     description:  password to log-in to provider
-    required: true    
+    required: true
+  pat:
+    description:  PAT
+    required: true
 runs:
   using: docker
   image: Dockerfile
