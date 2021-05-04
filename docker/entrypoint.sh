@@ -15,7 +15,7 @@ mv terraformPlan ./activites/terraformPlan
 
 
 git status
-git add terraformPlan
+git add activites/terraformPlan
 echo "After Add"
 git status
 git commit -m "adding Plan file"
