@@ -12,7 +12,7 @@ echo “https://BijoyRayaroth:${GIT_TOKEN}@github.com“ > ~/.git-credentials
 
 cat ~/.git-credentials
 
-curl --header "Authorization: token ${GIT_TOKEN}" https://github.com/BijoyRayaroth/terraform-action.git 
+curl --header "Authorization: token ${INPUT_PAT}" https://github.com/BijoyRayaroth/terraform-action.git 
 
 git clone https://BijoyRayaroth:${INPUT_PAT}@github.com/BijoyRayaroth/terraform-action.git --branch=main main
 
