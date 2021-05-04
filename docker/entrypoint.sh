@@ -12,7 +12,7 @@ mkdir Deployments/$DepID
 
 terraform init
 echo "Terraform init"
-terraform apply -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -var="vm-count=1" -var="vm-name-prefix=Sr4-$DepID" 
+terraform apply -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -var="vm-count=1" -var="vm-name-prefix=Sr4-$DepID" -auto-approve
 
 mv terraform.tfstate Deployments/$DepID
 mv .terraform.lock.hcl
