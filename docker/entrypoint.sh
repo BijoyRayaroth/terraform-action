@@ -12,10 +12,14 @@ mkdir Deployments/$DepID
 
 terraform init
 echo "Terraform init"
-terraform apply -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -var="vm-count=1" -var="vm-name-prefix=Sr4-$DepID" -auto-approve
+#TODO- Enable When running on PGN hosted agent
+#terraform apply -var="nutanix-userName=${INPUT_USERNAME}" -var="nutanix-password=${INPUT_PASSWORD}" -var="vm-count=1" -var="vm-name-prefix=Sr4-$DepID" -auto-approve
+touch terraform.tfstate
+touch .terraform.lock.hcl
+
 
 mv terraform.tfstate Deployments/$DepID
-mv .terraform.lock.hcl
+mv .terraform.lock.hcl Deployments/$DepID
 
 cd Deployments/$DepID
 
