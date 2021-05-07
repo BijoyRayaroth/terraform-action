@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 
-cat /github/workspace/README.md
+cat ./github/workspace/README.md
 
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
