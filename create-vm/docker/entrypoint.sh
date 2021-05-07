@@ -2,7 +2,7 @@
 
 pwd
 
-cd Test
+ls -lrt
 
 pwd
 
