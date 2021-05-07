@@ -1,7 +1,6 @@
 #!/bin/sh 
 
-
-cat README.md
+pwd
 
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
