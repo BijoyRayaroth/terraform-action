@@ -2,7 +2,7 @@
 
 pwd
 
-cd /Test
+cd Test
 
 pwd
 
