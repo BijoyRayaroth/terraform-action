@@ -1,6 +1,10 @@
 #!/bin/sh 
 
-ls
+yourfilenames=`ls ./*.*`
+for eachfile in $yourfilenames
+do
+   echo $eachfile
+done
 
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
