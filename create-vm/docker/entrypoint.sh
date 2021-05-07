@@ -1,6 +1,11 @@
 #!/bin/sh 
 
 pwd
+
+cd /Test
+
+pwd
+
 echo "check file" > myfile.txt
 
 # git config --global user.email "bijoy.rayaroth@philips.com"
