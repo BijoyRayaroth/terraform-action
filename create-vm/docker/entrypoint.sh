@@ -1,7 +1,7 @@
 #!/bin/sh 
 
 pwd
-cat .README.md
+echo "check file" > myfile.txt
 
 # git config --global user.email "bijoy.rayaroth@philips.com"
 # git config --global user.name "BijoyRayaroth"
