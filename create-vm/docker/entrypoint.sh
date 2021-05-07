@@ -1,10 +1,7 @@
 #!/bin/sh 
 
-yourfilenames=`ls ./`
-for eachfile in $yourfilenames
-do
-   echo $eachfile
-done
+
+cat /github/workspace/README.md
 
 git config --global user.email "bijoy.rayaroth@philips.com"
 git config --global user.name "BijoyRayaroth"
