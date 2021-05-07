@@ -1,6 +1,6 @@
 #!/bin/sh 
 
-yourfilenames=`ls ./*.*`
+yourfilenames=`ls ./`
 for eachfile in $yourfilenames
 do
    echo $eachfile
