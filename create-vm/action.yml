@@ -14,6 +14,9 @@ inputs:
   pat:
     description:  PAT
     required: true
+ outputs:
+   result:
+    description:The output for terraform output command
 runs:
   using: docker
   image: docker/Dockerfile
