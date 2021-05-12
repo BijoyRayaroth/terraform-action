@@ -14,7 +14,7 @@ inputs:
   pat:
     description:  PAT
     required: true
- outputs:
+outputs:
    result:
     description:The output for terraform output command
 runs:
