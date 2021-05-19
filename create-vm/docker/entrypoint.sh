@@ -6,6 +6,8 @@ ls -lrt
 
 pwd
 
+echo "git workspace - ${GITHUB_WORKSPACE}"
+
 echo "check file" > myfile.txt
 
 git config --global user.email "bijoy.rayaroth@philips.com"
